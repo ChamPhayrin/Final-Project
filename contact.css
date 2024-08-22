@@ -1,0 +1,154 @@
+/* FONTS */
+/* font-family: "Playwrite MX", cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Beiruti:wght@200..900&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+MX:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: "Playwrite GB S", serif; */
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Beiruti:wght@200..900&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+ES:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+MX:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: "Fredericka the Great", serif; */
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Beiruti:wght@200..900&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Fredericka+the+Great&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+ES:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+MX:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* INTRO HELLO'S */
+.intro {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+}
+
+.intro_helalo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-content: center;
+  padding: 30px;
+}
+
+.intro_bonjour {
+  transform: rotate(-10deg);
+  font-family: "Playwrite MX", cursive;
+  /* font-weight: var(--text-bold); */
+}
+
+#intro_hello {
+  transform: rotate(-10deg);
+  font-family: "Playwrite GB S", serif;
+}
+
+#intro_aloha {
+  transform: rotate(10deg);
+  color: var(--clr-base);
+  background-color: var(--clr-opacitylight_highlight);
+  font-family: "Fredericka the Great", serif;
+}
+
+
+/* CONTACT FORM */
+
+.contact {
+  font-size: var(--text-large);
+  background-color: var(--clr-lighter);
+  height: 60vh;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact_form {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.contact img {
+  position: relative;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+form h1 {
+  margin: 2rem;
+  font-weight: var(--text-bold);
+  font-size: var(--text-large);
+  font-family: var(--font-title);
+  text-align: center;
+}
+
+.contact_name,
+.contact_email {
+  height: auto;
+  margin-bottom: 40px;
+  font-weight: var(--text-bold);
+  font-size: var(--text-medium);
+  font-family: var(--font-header);
+}
+
+.contact_message {
+  font-weight: var(--text-bold);
+  font-size: var(--text-medium);
+  font-family: var(--font-header);
+}
+
+#name,
+#email {
+  width: 15vw;
+  height: 3vh;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+#message {
+  width: 15vw;
+  height: 15vh;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+#send {
+  border-radius: 10px;
+  background-color: var(--clr-base);
+  color: var(--clr-opacitylight_highlight);
+  border: none;
+  font-weight: var(--text-bold);
+  font-size: var(--text-small);
+  font-family: var(--text-paragraph);
+  text-align: center;
+  padding: 5px 5px;
+}
+
+@media screen and (max-width: 1026px) {
+  .contact_form {
+    width: 100%;
+  }
+
+  .form h1 {
+    font-size: 2rem;
+  }
+  .contact_email,
+  .contact_name,
+  .contact_message,
+  #send {
+    font-size: 1rem;
+  }
+
+  #name,
+  #email,
+  #message {
+    width: 100%;
+  }
+
+  .contact img {
+    display: none;
+  }
+}

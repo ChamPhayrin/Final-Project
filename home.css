@@ -1,0 +1,160 @@
+
+
+/* ABOUT ME CONTAINER */
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* SLIDER ANIMATION*/
+
+/* LINK TO VIDEO: https://www.youtube.com/watch?v=0wvrlOyGlq0&t=772s */
+/* had trouble making it responsive. tried chaning height and width to rem, %, or px but container refused to become smaller. was unsucessful making slider responsive */
+
+.slider {
+  width: 30vw;
+  max-height: 40vh;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  width: 30vw;
+  max-height: 40vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 30vw;
+  transition: 2s;
+}
+
+.slide img {
+  width: 30vw;
+  max-height: 40vh;
+}
+
+/* MANUAL NAVIGATION */
+.navigation-manual {
+  position: absolute;
+  width: 30vw;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 5px solid var(--clr-light);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.manual-btn:hover {
+  background-color: var(--clr-highlight);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 1rem;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -200%;
+}
+
+/* ABOUT ME  */
+.aboutmetext {
+  width: 60rem;
+  padding: 0 1rem;
+  font-size: var(--text-large);
+  padding-top: 5rem;
+}
+
+.aboutmetext__p {
+  font-family: var(--font-paragraph);
+  color: var(--clr-text);
+  font-size: var(--text-medium);
+  margin: 2rem 0;
+}
+
+.aboutmetext__header {
+  margin: 1rem 0;
+  font-family: var(--font-header);
+  background-color: var(--clr-light);
+  color: var(--clr-text);
+  position: absolute;
+  z-index: 1;
+  top: 25rem;
+  left: 70rem;
+}
+
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .aboutmetext__header{
+    top: 25rem;
+    left: 40rem;
+    font-size: 1.2rem;
+  }
+  .aboutmetext{
+    padding-top: 0;
+    }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .aboutmetext__header{
+    top: 23rem;
+    left: 40rem;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .aboutmetext__header{
+    position: relative;
+    top:0;
+    left:0;
+  }
+  /* makes sure to remove the padding when 1024px so header and p wont have large negative space between*/
+  .aboutmetext{
+    padding-top: 0;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .aboutmetext__header{
+      font-size: 1.3rem;
+    }
+    .aboutmetext__p{
+      font-size: 1.1rem;
+    }
+  }
+
+  /* xs */
+@media (max-width: 475px) {
+  .aboutmetext__header{
+    font-size: 1.1rem;
+  }
+  .aboutmetext__p{
+    font-size: 1rem;
+  }
+}

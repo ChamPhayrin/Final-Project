@@ -1,0 +1,165 @@
+/* PROFESIONAL DEV */
+.profdev {
+  max-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.profdev__text {
+  flex-direction: column wrap;
+  align-content: center;
+  margin: 1rem 2rem;
+  color: var(--clr-text);
+  width: 50rem;
+}
+
+.profdev h1 {
+  height: 5rem;
+  font-size: var(--text-large);
+  font-family: var(--font-header);
+}
+
+.profdev p {
+  font-size: var(--text-medium);
+  font-family: var(--font-paragraph);
+}
+
+.profdev img {
+  min-width: 30vw;
+  max-height: 45vh;
+  border-radius: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+/* TECHNICAL DEV WAVE*/
+
+.techwave_spacer {
+  aspect-ratio: 900/400;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  z-index: -1;
+  height: 19rem;
+}
+
+.techwave_1 {
+  background-image: url("techwave_1.svg");
+  background-position: bottom;
+  margin-bottom: -1px;
+}
+
+.techwave_2 {
+  background-image: url("techwave_2.svg");
+  background-position: top;
+}
+
+/* TECHNICAL DEV */
+.techdev {
+  max-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  background-color: var(--clr-lighter);
+}
+
+.techdev__text {
+  flex-direction: column wrap;
+  align-content: center;
+  margin: 1rem 2rem;
+  color: var(--clr-text);
+  width: 50rem;
+}
+
+.techdev h1 {
+  height: 5rem;
+  font-size: var(--text-large);
+  font-family: var(--font-header);
+}
+
+.techdev p {
+  font-size: var(--text-medium);
+  font-family: var(--font-paragraph);
+}
+
+.techdev img {
+  min-width: 30vw;
+  max-height: 45vh;
+  border-radius: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+/* PERSONAL DEV IMAGES */
+
+.persondevimgs {
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  margin-bottom: 6rem;
+}
+
+.persondevimgs__both img {
+  min-width: 15vw;
+  max-height: 20vh;
+  border-radius: 20px;
+  margin: 0 3rem;
+}
+
+/* PERSONAL DEV  */
+
+.persondev {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+
+.persondev__text {
+  flex-direction: column wrap;
+  align-content: center;
+  color: var(--clr-text);
+  width: 50rem;
+}
+
+.persondev h1 {
+  height: 5rem;
+  font-size: var(--text-large);
+  font-family: var(--font-header);
+  text-align: center;
+}
+
+.persondev p {
+  font-size: var(--text-medium);
+  font-family: var(--font-paragraph);
+  margin: 1rem;
+}
+
+/* MEDIA   */
+@media screen and (max-width: 768px) {
+  .profdev h1,
+  .techdev h1,
+  .persondev h1 {
+    font-size: 1.5rem;
+  }
+  .profdev p,
+  .techdev p,
+  .persondev p {
+    font-size: 1.3rem;
+  }
+  .techwave_spacer{
+    height: 8vh;
+  }
+}
